@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .container{
+            margin-top  : 30px;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            border: 2px solid black;
+            transform: translate(-50%,-50%);
+            padding: 75px;
+            background-color: antiquewhite; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h1<u>STUDENT DETAILS FORM</u></h1>
+     
+    <form action="./formsubmit.html" target="_blank">
+        <label for="s">Name:</label>
+        <input type="text" placeholder="Enter your Name">
+        <br><br>
+        <label for="">Date Of Birth:</label>
+        <input type="date">
+        <br><br>
+        <label for="">Age:</label>
+        <input type="number" placeholder="Enter Your Age">
+        <br><br>
+        <label for="">College Name:</label>
+        <input type="text" placeholder="Enter your college">
+        <br><br>
+        <label for=""> Mobile No:</label>
+        <input type="tel" placeholder="Enter Your Number" maxlength="10">
+        <br><br>
+        <fieldset style="width: 40%; ">
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="">Female</label><br>
+            <input type="radio" name="gender" id="Others" value="Others">
+            <label for="">Others</label>
+        </fieldset>
+        <br><br>
+        <fieldset style="width: 50%;">
+            <legend>Skills</legend>
+            <input type="checkbox" name="skills" id="HTML" value="HTML">
+            <label for="">HTML</label><br>
+            <input type="checkbox" name="skills" id="CSS" value="CSS">
+            <label for="">CSS</label><br>
+            <input type="checkbox" name="skills" id="JAVA SCRIPT" value="JAVASCRIPT">
+            <label for="">JAVA SCRIPT</label><br>
+            <input type="checkbox" name="skills" id="JAVA" value="JAVA">
+            <label for="">JAVA</label><br>
+            <input type="checkbox" name="skills" id="SQL" value="SQL">
+            <label for="">SQL</label><br>
+        </fieldset>
+        <br><br>
+        <label for="">Select Role:</label>
+        <select name="role" id="role" required>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="Un employee">Unemployee</option>
+        </select>
+        <br><br>
+        <label for="">Resume:</label>
+        <input type="file" id="Resume" name="Resume" accept=".pdf, .doc, .docx" required>
+        <br><br>
+        <label for="">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter Your password">
+        <br><br>
+        <label for="">Note:</label>
+        <textarea name="" id="" cols="20" rows="01"></textarea>
+        <br><br>
+        <button value="Submit">Submit</button>
+        <button>Reset</button>
+   </form>
+    </div>
+</body>
+</html>
